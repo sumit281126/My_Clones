@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./spotify/logo.png">
+    <title>Spotify - Web Player: For Everyone</title>
+    <link rel="stylesheet" href="spotify_clone.css">
+</head>
+
+<body>
+    <!-------LAYOUT MAKING START ----------------------------------------------------->
+    <div class="main">
+        <!--side bar------------------------------------------------------------------>
+        <div class="sidebar">
+
+
+            <div class="nav">
+
+                <div class="navoption" style="opacity:1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+
+                <div class="navoption">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <!--SIDEBAR(library)------------------------------------------------------->
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option">
+                        <img src="./spotify_material/library_icon.png" >
+                        <a href="#"> Your library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!--Content 1---------------------------------------------------------->
+                <div class="boxes">
+                    <div class="box1">
+                        <p class="p-1">Create your fist playlist</p>
+                        <p class="p-2">It's easy, we'll help you</p>
+                        <button class="badge">Create Playlist</button>
+                    </div>
+                    <!--Content 2------------------------------------------------------->
+                    <div class="box1">
+                        <p class="p-">Let's find some podcast to follow</p>
+                        <p class="p-2">We'll keep you updated on new episods</p>
+                        <button class="badge">Browse podcast</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!------------------------------MAIN CONTENT START------------------------------>
+        <div class="main-content">
+            <!----------------------------Nav Stickybar--------------------------------->
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <i class="fa-solid fa-chevron-left" style="margin-top:0;" style="margin-left:3rem; "></i>
+                    <i class="fa-solid fa-chevron-right hide" style="margin-top:0; margin-left: 1rem;"></i>
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge hide" style="margin-top:0;">Explore Premium</button>
+                    <button class="badge dark-badge " style="margin-top:0;"><i class="fa-regular fa-circle-down "
+                            style="margin-right:0.3rem;"></i>Install App</button>
+                    <i class="fa-regular fa-user item" style="margin-top:0;"></i>
+                </div>
+            </div>
+
+            <!---------------------------Nav-Stickybar-End---------------------------->
+
+            <!---------------------------------MAIN LAYOUT START---------------------------->
+            <h2>Popular Artist <p class="Show_all"> Show all</p>
+            </h2>
+
+            <div class="top-cardcontainer">
+                <div class="top-card">
+                    <img src="./spotify_material/VISHAL MISHRA.jpeg">
+                    <p class="card-title">Vishal Mishra</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="top-card">
+                    <img src="./spotify_material/ARIJIT.jpeg">
+                    <p class="card-title">Arijit singh</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="top-card">
+                    <img src="./spotify_material/JAVADALI.jpeg">
+                    <p class="card-title">Javed Ali</p>
+                    <p class="card-info">Artist</p>
+                </div>
+                <div class="top-card">
+                    <img src="./spotify_material/anirudh ravichander.jpeg">
+                    <p class="card-title">Anirudh Ravichander</p>
+                    <p class="card-info">Artist</p>
+                </div>
+            </div>
+            <h2>Trending now near you </p>
+            </h2>
+            <div class="cardcontainer">
+                <div class="card">
+                    <img src="./spotify_material/gulabi sari.jpg">
+                    <p class="card-title">Gulabi Sadi</p>
+                    <p class="card-info"> by Sanju Rathod</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify_material/sarataranga.jpg">
+                    <p class="card-title">Sataranga</p>
+                    <p class="card-info">By Arijit Singh</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify_material/Aala-Bailgada.jpg">
+                    <p class="card-title">Aala Bailgada</p>
+                    <p class="card-info">by Adarsh Shinde, Prashant Nakti, and Sonali Sonawane
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./spotify_material/album.jpeg">
+                    <p class="card-title">Heeriye</p>
+                    <p class="card-info">By Darshan Raval</p>
+                </div>
+            </div>
+            <h2>Popular radio </h2>
+            <div class="cardcontainer">
+                <div class="card">
+                    <img src="./spotify_material/radio_1.jpg">
+                    <p class="card-title">Arijit Singh Radio</p>
+                    <p class="card-info">With Neha Kakkar, Pritam, KK and more...</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify_material/radio_2.jpg">
+                    <p class="card-title">Diljit Dosanjh Radio</p>
+                    <p class="card-info">With Garry Sandhu, Ranjit Bawa, Amrind...</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify_material/radio_3.jpg">
+                    <p class="card-title">KK radio</p>
+                    <p class="card-info">With Mohit Chauhan, Ankit Tiwari, Javed Ali...</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify_material/radio_4.jpg">
+                    <p class="card-title">Alka Yagnik Radio</p>
+                    <p class="card-info">With Udit Narayan, Kumar Sanu, Anuradh...</p>
+                </div>
+            </div>
+            <h2>Feature charts <p class="Show_all"> Show all</p>
+            </h2>
+            <div class="cardcontainer">
+                <div class="card">
+                    <img src="./spotify_material/card5img.jpeg">
+                    <p class="card-title">Top Songs Global</p>
+                    <p class="card-info">Your daily update of the most played tracks right...</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify_material/card6img.jpeg">
+                    <p class="card-title">Top Songs India</p>
+                    <p class="card-info">Your daily update of the most played tracks right...</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify_material/card1img.jpeg">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played tracks right...</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify_material/viral50.jpg">
+                    <p class="card-title">Viral 50 - Global</p>
+                    <p class="card-info">Your daily update of the most played tracks right...</p>
+                </div>
+            </div>
+            <h2>Spotify original podcast</h2>
+            <div class="cardcontainer">
+                <div class="card">
+                    <img src="./spotify_material/prodcast_1.jpeg">
+                    <p class="card-title">Shri Krishna Leela...</p>
+                    <p class="card-info">Spotify Studios</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify_material/joe.jpg">
+                    <p class="card-title">The joe Rogan</p>
+                    <p class="card-info">Joe Rogan...</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify_material/podcast_3.jpeg">
+                    <p class="card-title">True Story Bro! With...</p>
+                    <p class="card-info">Spotify</p>
+                </div>
+                <div class="card">
+                    <img src="./spotify_material/podcast_4.jpeg">
+                    <p class="card-title">Gopi Sudhakar... </p>
+                    <p class="card-info">Spotify Studios</p>
+                </div>
+            </div>
+            <div class="footer">
+
+                <ul>
+                    <a href="#" style="opacity:1;">Company</a>
+                    <a href="#">About</a>
+                    <a href="#">Jobs</a>
+                    <a href="#">For the record</a>
+                </ul>
+                <ul>
+                    <a href="#" style="opacity:1;">Communities</a>
+                    <a href="#">For Artist</a>
+                    <a href="#">Developer</a>
+                    <a href="#">Advertising</a>
+                    <a href="#">vendors</a>
+                    <a href="#">investor</a>
+                </ul>
+                <ul>
+                    <a href="#" style="opacity:1;">Useful links</a>
+                    <a href="#">Support</a>
+                    <a href="#">Free mobile apps</a>
+                </ul>
+                <ul>
+                    <a href="#" style="opacity:1;">Spotify plans</a>
+                    <a href="#">Premium individuals</a>
+                    <a href="#">Premium duos</a>
+                    <a href="#">Prmium family</a>
+                    <a href="#">Premium students</a>
+                    <a href="#">Spotify free</a>
+
+                </ul>
+                <!---------------------FOOTER SECTION------------------------------------>
+                <div class="footer-icon " style="opacity:1; margin-left: 1.5rem;">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter" style="margin-left: 0.80rem;"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook" style="margin-left: 0.80rem;"></i></a>
+                </div>
+
+            </div>
+
+            <div class="copyright"><i class="fa-regular fa-copyright"></i> 2024 Spotify AB</div>
+            <br><br><br>br
+        </div>
+<!----------------------------FOOTER SECTION END------------------------------------->
+
+<!----------------------------MUSIC PLAYER------------------------------------------->
+        <div class="music-player">
+            <div class="album">
+                <div class="album-section">
+                    <img src="./spotify_material/album.jpeg">
+                    <div class="about-album">
+                        <p class="dark">Heeriye</p>
+                        <p class="lite">Dulquer salmaan and Jasleen royal</p>
+
+                    </div>
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./spotify_material/player_icon1.png" class="player-icon">
+                    <img src="./spotify_material/player_icon2.png" class="player-icon">
+                    <img src="./spotify_material/player_icon3.png" class="player-icon"
+                        style="opacity:1; height:2rem; width:2rem;">
+                    <img src="./spotify_material/player_icon4.png" class="player-icon">
+                    <img src="./spotify_material/player_icon5.png" class="player-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="current-time time">00.00</span>
+                    <input type="range" min="0" max="100" step="1" class="progressbar">
+                    <span class="total-time time">3.33</span>
+                </div>
+            </div>
+            <div class="music-controls">
+                <div class="controls-icons">
+                    <i class="fa-solid fa-play"></i>
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="0" max="100" set="1" class="music-control-bar">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
